@@ -1,0 +1,162 @@
+/* 样式初始化 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+#nav,#solidBlue,#banner,#productIntroduction,#teamConcept,#projectInnovation,#contact{
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid #000000; */
+}
+.container{
+    width: 1400px;
+    /* border: 1px solid #f00000; */
+    margin: 0px auto;
+}
+/* 设置导航栏的样式 */
+#nav{
+    float: left;
+    height: 80px;
+}
+#nav .logo img{
+    width: 70px;
+    height: 70px;
+    padding-top: 5px;
+}
+#nav ul li{
+    float: left;
+    line-height:80px;
+}
+#nav li a{
+    color: #8ab2c7;
+    font-size: 20px;
+    border-right: 1.5px solid #8ab2c7;
+    padding: 0px 15px;
+
+}
+#nav li a:hover{
+    color: black;
+}
+#nav .register a{
+    border: none;
+}
+/* 设置小蓝条的样式 */
+#solidBlue{
+    height: 20px;
+    float: left;
+    background-color: #8ab2c7;
+}
+/* 设置产品介绍的样式 */
+#productIntroduction{
+    height: 850px;
+    float: left;
+}
+#productIntroduction .product-top{
+    text-align: center;
+}
+#productIntroduction .oldpeople img{
+    height: 500px;
+    width: 500px;
+    padding-top: 100px;
+}
+#productIntroduction ul li{
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+#productIntroduction li img{
+    margin-left: 85px;
+}
+#productIntroduction li h4{
+    text-align: center;
+}
+#productIntroduction li p{
+    text-align: center;
+}
+/* 设置团队理念样式 */
+#teamConcept{
+    height: 800px;
+    float: left;
+    background: url(img/团队理念.png) no-repeat;
+}
+#concept{
+    text-align: center;
+    width: 1000px;
+    border: 5px solid #ffffff;
+    margin-left: 220px;
+    margin-top: 300px;
+    color: #ffffff;
+    font-size: 25px;
+}
+#concept h1{
+    border-bottom: 4px solid #ffffff
+}
+/* 设置项目创新样式 */
+#projectInnovation{
+    height: 800px;
+    float: left;
+}
+#projectInnovation .creative-top{
+    margin-top: 100px;
+    text-align: center;
+}
+#projectInnovation .creative-footer img{
+    float: left;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 150px;
+}
+/* 设置联系我们样式 */
+#contact{
+    background-color: #8ab2c7;
+    float: left;
+    height: 400px;
+}
+#contact{
+    float: left;
+    text-align: center;
+}
+#contact .contact-top{
+    margin-top: 30px;
+    width: 400px;
+    text-align: center;
+    margin-left: 500px;
+}
+#contact .contact-top h2{
+    color: #ffffff;
+}
+#contact .contact-top h3{
+    color: #ffffff;
+    margin-bottom: 3px;
+    border-bottom: 2px solid #ffffff;
+}
+#contact ul{
+    margin-left: 30px;
+}
+#contact ul li{
+    float: left;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+#contact ul li h3{
+    color: #ffffff;
+}
+#contact ul li p{
+    color: #ffffff;
+    margin-top: 3px;
+}
