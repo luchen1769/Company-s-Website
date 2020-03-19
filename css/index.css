@@ -1,0 +1,240 @@
+/* 样式初始化 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* 对所有的div及container进行初始化 */
+#nav,#solidBlue,#banner,#productIntroduction,#teamConcept,#projectInnovation,#solidBlue2,#contact,#solidBlue3{
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid #000000; */
+}
+.container{
+    width: 1400px;
+    /* border: 1px solid #f00000; */
+    margin: 0px auto;
+}
+div img{  
+    cursor: pointer;  
+    transition: all 0.2s;  
+}  
+div img:hover{  
+    transform: scale(1.4);  
+}  
+/* 返回顶部按钮样式设置 */
+p#back-to-top {
+    position: fixed;/*将位置设置成相对屏幕*/
+    bottom: 50px;/*距浏览器底端50个像素*/
+    right: 50px;/*距浏览器右端50个像素*/
+}
+p#back-to-top a {
+    text-align: center;/*居中*/
+    text-decoration: none;/*文字修饰设置为无*/
+    color: #d1d1d1;
+    display: block;
+    width: 50px;
+    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+    transition: color 1s;
+}
+p#back-to-top a:hover {
+    color: #979797;/*对鼠标滑过设置效果*/
+}
+p#back-to-top a span {
+    /* 设置返回顶部按钮的图片 */
+    background: #d1d1d1 url(../img/back-to-top.png) no-repeat center center;
+    border-radius: 6px;/*将整个按钮设置为圆角*/
+    display: block;
+    height: 50px;/*设置按钮的高为50个像素*/
+    width: 50px;/*设置按钮的宽为50个像素*/
+    margin-bottom: 5px;/*底端间隔5个像素*/
+      /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+    transition: background 1s;
+}
+#back-to-top a:hover span {
+    background: #979797 url(../img/back-to-top.png) no-repeat center center;
+}
+/* 设置导航栏的样式 */
+#nav{
+    float: left;/*设置浮动为向左浮动*/
+    height: 80px;/*设置导航栏的高度为80个像素*/
+    /* position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100; */
+}
+/* 设置导航栏的logo的样式 */
+#nav .logo img{
+    width: 70px;/*设置logo的宽为70个像素*/
+    height: 70px;/*设置logo的高为70个像素*/
+    padding-top: 5px;/*与顶端的间距为5个像素*/
+}
+/* 设置导航栏各链接的样式 */
+#nav ul li{
+    float: left;/*设置li向左浮动*/
+    line-height:80px;/*行高设置为80个像素*/
+}
+#nav li a{
+    color: #8ab2c7;/*设置各链接的文字颜色*/
+    font-size: 20px;/*设置各链接的文字大小*/
+    border-right: 1.5px solid #8ab2c7;/*在每两个中间加上竖线*/
+    padding: 0px 15px;/*设置边距*/
+
+}
+#nav li a:hover{
+    color: black;/*设置鼠标滑动至链接上时文字颜色变为黑色*/
+    text-decoration: none;/*文字修饰无*/
+}
+#nav .register a{
+    border: none;/*去除注册右边的边框*/
+}
+/* 设置小蓝条的样式 */
+#solidBlue{
+    height: 20px;/*设置小蓝条的高为20个像素*/
+    float: left;/*设置为向左浮动*/
+    background-color: #8ab2c7;/*背景颜色为天蓝*/
+}
+/* 设置banner图的样式 */
+#banner{
+    height: 800px;/*高为800像素*/
+    float: left;/*向左浮动*/
+    background: url(../img/SWOCH.png) no-repeat;/*设置背景图片并不重复*/
+}
+#bannerPicture h1{
+    text-align: center;/*设置文字居中*/
+    width: 400px;/*宽为400像素*/
+    border: 5px solid #bbbbbb;/*边框颜色为5个像素灰色实线*/
+    margin-left: 520px;/*距左端520像素*/
+    margin-top: 270px;/*距顶端270个像素*/
+    color: #ffffff;/*文字颜色为白色*/
+    font-size: 60px;/*文字大小为60像素*/
+    letter-spacing: 10px;/*文字间距为10个像素*/
+}
+/* 设置产品介绍的样式 */
+#productIntroduction{
+    height: 900px;/*设置产品介绍的高度为900像素*/
+    float: left;/*向左浮动*/
+}
+#productIntroduction .product-top{
+    text-align: center;
+}
+#productIntroduction .oldpeople img{
+    height: 500px;/*设置老人图片高500像素*/
+    width: 500px;/*设置老人图片宽500像素*/
+    padding-top: 100px;/*距上端100像素*/
+}
+/* 设置七大功能介绍 */
+#productIntroduction ul li{
+    width: 250px;/*宽为250像素*/
+    height: 200px;/*高为200像素*/
+    float: left;/*向左浮动*/
+    margin-top: 35px;/*与上方间距35像素*/
+    margin-left: 15px;/*与左边间距15像素*/
+}
+#productIntroduction li img{
+    margin-left: 85px;/*设置每个功能图片距左端85像素*/
+}
+/* 设置文字居中 */
+#productIntroduction li h4{
+    text-align: center;
+}
+#productIntroduction li p{
+    text-align: center;
+}
+/* 设置团队理念样式 */
+#teamConcept{
+    height: 800px;/*设置团队理念高度为800像素*/
+    float: left;/*向左浮动*/
+    background: url(../img/团队理念.png) no-repeat;/*设置背景图片*/
+}
+#concept{
+    /* 设置中间的文字的样式 */
+    text-align: center;
+    width: 1000px;
+    border: 5px solid #ffffff;
+    margin-left: 220px;
+    margin-top: 300px;
+    color: #ffffff;
+    font-size: 25px;
+}
+#concept h1{
+    border-bottom: 4px solid #ffffff
+}
+/* 设置项目创新样式 */
+#projectInnovation{
+    height: 800px;/*高为800像素*/
+    float: left;
+}
+#projectInnovation .creative-top{
+    margin-top: 100px;/*项目创新的上端距上面100像素*/
+    text-align: center;
+}
+/* 设置项目创新的下半部分图片的样式 */
+#projectInnovation .creative-footer img{
+    float: left;
+    margin-right: 145px;
+    margin-left: 145px;
+    margin-top: 150px;
+}
+/* 设置小蓝条2的样式 */
+#solidBlue2{
+    height: 50px;
+    float: left;
+    background-color: #c3d8e2;
+}
+/* 设置页尾样式 */
+#contact{
+    background-color: #8ab2c7;/*设置背景色*/
+    float: left;
+    height: 500px;/*设置高度500像素*/
+}
+#contact{
+    float: left;
+    text-align: center;
+}
+#contact .contact-top{
+    margin-top: 30px;
+    width: 400px;
+    text-align: center;
+    margin-left: 500px;
+}
+#contact .contact-top h2{
+    color: #ffffff;
+}
+#contact .contact-top h3{
+    color: #ffffff;
+    margin-bottom: 3px;
+    border-bottom: 2px solid #ffffff;
+}
+#contact ul{
+    margin-left: 30px;
+}
+#contact ul li{
+    float: left;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+#contact ul li h3{
+    color: #ffffff;
+}
+#contact ul li p{
+    color: #ffffff;
+    margin-top: 3px;
+}
+/* 设置小蓝条3的样式 */
+#solidBlue3{
+    height: 50px;
+    float: left;
+    background-color: #c3d8e2;
+}

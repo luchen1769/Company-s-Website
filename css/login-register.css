@@ -1,0 +1,163 @@
+/* 样式初始化 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* 对所有部分进行初始化 */
+#nav,#main,#solidBlue,#solidBlue2{
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid #000000; */
+}
+.container{
+    width: 1400px;
+    /* border: 1px solid #f00000; */
+    margin: 0px auto;
+}
+
+/* 设置导航栏的样式 */
+#nav{
+    float: left;/*设置浮动为向左浮动*/
+    height: 80px;/*设置导航栏的高度为80个像素*/
+    /* position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100; */
+}
+/* 设置导航栏的logo的样式 */
+#nav .logo img{
+    width: 70px;/*设置logo的宽为70个像素*/
+    height: 70px;/*设置logo的高为70个像素*/
+    padding-top: 5px;/*与顶端的间距为5个像素*/
+}
+/* 设置导航栏各链接的样式 */
+#nav ul li{
+    float: left;/*设置li向左浮动*/
+    line-height:80px;/*行高设置为80个像素*/
+}
+#nav li a{
+    color: #8ab2c7;/*设置各链接的文字颜色*/
+    font-size: 20px;/*设置各链接的文字大小*/
+    border-right: 1.5px solid #8ab2c7;/*在每两个中间加上竖线*/
+    padding: 0px 15px;/*设置边距*/
+
+}
+#nav li a:hover{
+    color: black;/*设置鼠标滑动至链接上时文字颜色变为黑色*/
+    text-decoration: none;/*文字修饰无*/
+}
+#nav .register a{
+    border: none;/*去除注册右边的边框*/
+}
+/* 设置小蓝条的样式 */
+#solidBlue{
+    height: 40px;/*设置小蓝条的高为40个像素*/
+    float: left;/*设置为向左浮动*/
+    background-color: #8ab2c7;/*背景颜色为天蓝*/
+}
+/* 设置主界面 */
+#main{
+    top: 50px;
+    float: left;
+    height: 748px;/*设置高度为748像素，即撑满一个屏幕*/
+    display: flex;/*设置为弹性布局*/
+    justify-content: center;/*主界面居中*/
+    align-items: center;/*居中*/
+    background: url(../img/SWOCH.png);/*插入背景图片*/
+    /* background-color: #8ab2c7; */
+}
+.switch span{
+    color: #ccc;/*设置登录/注册没选中的颜色为灰色*/
+    font-size: 1.5rem;/*设置登录注册按钮的字体大小为1.5rem*/
+    cursor: pointer;/*设置鼠标指针*/
+}
+.switch span.active{
+    color:#8ab2c7;/*当登录/注册选中之后颜色变为天蓝*/
+}
+.panel{
+    width: 50%;/*panel的宽度为50% 即中间 */
+    margin: 0 30rem 0;
+    display: flex;
+}
+form{
+    width: 12rem;/* 设置输入框的宽度 */
+    margin: 3rem 0 0;/*登录注册*/
+}
+form .input{
+    position: relative;
+    opacity: 1;
+    height: 2rem;/*高度设置为2rem*/
+    width: 100%;
+    margin: 2rem 0;/*每个输入框间距2rem*/
+    transition: .4s;
+}
+
+.input input{
+    outline: none;/*取消输入框周边的边框*/
+    width: 100%;
+    background-color: transparent;/*背景色设置为透明*/
+    border: none;/*边框无*/
+    border-bottom: .1rem solid #8ab2c7;/*设置底部边框*/
+    color: white;/*字体颜色为白色*/
+    font-size: 1rem;/*字体大小为1rem*/
+}
+
+.input::after{
+    content: attr(placeholder);
+    position: absolute;
+    left: 0;
+    top:-20%;
+    font-size: 1rem;
+    color:#8ab2c7;
+    transition: .3s;
+}
+
+.input.focus::after{
+    top:-70%;
+    font-size: 0.8rem;
+}
+/* 将邮箱和确认密码初始设置为不显示 */
+.login .input#email,.login .input#repeat{
+    margin: 0;
+    height: 0;
+    opacity: 0;
+}
+/* 设置忘记密码的样式 */
+form a{
+    display: block;
+    color: #8ab2c7;
+    font-size: .8rem;
+    cursor: pointer;
+}
+/* 设置登录按钮的样式 */
+form button{
+    border: none;
+    outline: none;/*边框设置为无*/
+    margin: 2rem 0 0;/*距上端2rem*/
+    width: 100%;
+    height: 3.5rem;/*高度3.5rem*/
+    border-radius: 3rem;/*设置为圆角*/
+    /*设置背景颜色及阴影*/
+    background: linear-gradient(90deg,rgb(83, 198, 233),rgb(224, 162, 243));
+    box-shadow: 0 0 8px rgb(83,198,233);
+    cursor: pointer;
+    color: white;
+}
+/* 设置页面底部蓝条的样式 */
+#solidBlue2{
+    height: 40px;
+    float: left;
+    background-color: #8ab2c7;
+}

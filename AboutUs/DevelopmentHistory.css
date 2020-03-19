@@ -1,0 +1,160 @@
+/* 样式初始化 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+*, *:after, *:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-size: 100%;
+}
+img {
+    max-width: 100%;
+}
+  
+/* 设置标题的样式 */
+.title{
+    background-color: #8ab2c7;/*设置标题栏背景色天蓝*/
+    width: 860px;
+    background-color: #8ab2c7;
+    color: #fff;/*字体颜色白色*/
+    line-height: 40px;/*行高40像素*/
+    height: 40px;/*高度40像素*/
+    font-size: 20px;/*字体大小20像素*/
+    font-weight: bold;/*字体加粗*/
+    padding-left: 20px;/*内边距左20像素*/
+    border: 1px solid #8ab2c7;/*加上一像素的实线边框*/
+    border-bottom: none;
+}
+
+.text{
+    width: 860px;
+    line-height: 28px;/*行高28像素*/
+    padding: 20px 5%;/*与上下边距20像素，左右5%的边距*/
+    border: 1px solid #cccccc;
+    border-top: none;
+}
+.cd-container{
+    width: 90%;/*宽度90%*/
+    max-width: 860px;
+    margin: 0 auto;
+}
+.cd-container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+#cd-timeline{
+    position: relative;/*将时间条改成绝对定位*/
+    padding: 2em 0;/*距上下端2个字体的大小，左右无间距*/
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+/*使用before伪类在时间轴前面加一条直线*/
+#cd-timeline::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;/*距离左侧18像素*/
+    height: 100%;
+    width: 4px;/*设置宽度*/
+    background: #d7e4ed;
+    /* background: #8ab2c7; */
+}
+.cd-timeline-block{
+    position: relative;
+    margin: 2em 0;
+}
+.cd-timeline-block:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.cd-timeline-block:first-child{
+    margin-top: 0;/*离上端无间隔*/
+}
+.cd-timeline-block:last-child{
+    margin-bottom: 0;/*下端无间隔*/
+}
+/*设置直线上的图片样式*/
+.cd-timeline-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+.cd-timeline-img img{
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+/* 对三种图片分别设置不同的背景色 */
+.cd-timeline-img.cd-picture{
+    background: #75ce66;
+}
+.cd-timeline-img.cd-movie{
+    background: #c03b44;
+}
+.cd-timeline-img.cd-location{
+    background: #f0ca45;
+}
+.cd-timeline-content{
+    position: relative;
+    margin-left: 60px;
+    background: white;
+    border-radius: 0.25em;
+    padding: 1em;
+    box-shadow: 0 8px 0 #d7e4ed;
+    background-color: rgb(228, 228, 228);
+}
+.cd-timeline-content:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.cd-timeline-content h2{
+    color: #303e49;
+    font-size: 25px;
+    font-family: 微软雅黑;
+}
+.cd-timeline-content .cd-date{
+    font-size: 20px;
+    display: inline-block;
+    float: left;
+    padding: .8em 0;
+    opacity: .7;/*设置时间的透明度*/
+}
+.cd-timeline-content::before{
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;/*设置7像素的透明边框*/
+    border-right: 7px solid white;/*有边框设置为白色*/
+}

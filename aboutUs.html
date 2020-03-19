@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>科技物联，让特殊人群回归社会</title>
+    <link rel="stylesheet" href="css/aboutUs.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+</head>
+<body>
+    <!-- 页面的导航栏 -->
+    <div id="nav">
+        <div class="container">
+            <div class="logo left">
+                <!-- 导航栏左部的公司logo -->
+                <img src="img/logo.png">
+            </div>
+            <ul class="right">
+                <!-- 链接到各个子界面的超链接 -->
+                <!-- 点击网站首页链接至index.html -->
+                <li><a href="index.html">网站首页</a></li>
+                <!-- 点击关于我们链接至aboutUs.html -->
+                <li><a href="aboutUs.html">关于我们</a></li>
+                <!-- 点击业务介绍链接至businessIntroduction.html -->
+                <li><a href="businessIntroduction.html">业务介绍</a></li>
+                <!-- 点击下载APP链接至download.html -->
+                <li><a href="download.html">下载APP</a></li>
+                <!-- 点击登录/注册链接至login-register.html -->
+                <li><a href="login-register.html">登录</a></li>
+                <li class="register"><a href="login-register.html">注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 页面的蓝条 -->
+    <div id="solidBlue">
+        <div class="container"></div>
+    </div>
+    <!-- 主页面分为左半部分和右半部分，左半部分为导航栏，点击之后右侧随之改变 -->
+    <div id="main">
+        <div class="container">
+            <div class="main-left">
+                <div class="navTitle">关于我们</div>
+                <ul class="leftFooter">
+                    <!-- 通过Ajax请求异步刷新将页面显示在#main-right中 -->
+                    <li data-id="Choice1" onclick="loadPage('AboutUs/ExpertAdvisor.html')">专家顾问</li>
+                    <li data-id="Choice2" onclick="loadPage('AboutUs/DevelopmentHistory.html')">发展历程</li>
+                    <li data-id="Choice3" onclick="loadPage('AboutUs/TeamPresentSituation.html')">团队现状</li>
+                    <li data-id="Choice4" onclick="loadPage('AboutUs/TeamRecruitment.html')">队员招募</li>
+                    <li id="last" data-id="Choice5" onclick="loadPage('AboutUs/TeamCulture.html')">团队文化</li>
+                </ul>    
+            </div>
+            <!-- main-right初始显示内容为专家顾问 -->
+            <div id="main-right">
+                <div class="title">专家顾问</div>
+                <div class="text">
+                    <div class="advisor">
+                        <div class="pic">
+                            <img src="img/WangHui.png">
+                        </div> 
+                        <div class="txt">
+                            <h2>王晖</h2>
+                            <p>主要研究方向为机器学习算法、压缩感知算法、云计算与雾计算等，著有 “一种基于数据热点的MongoDB负载均衡策略 ”等多篇论文 ，曾作为负责人完成智慧云教室系统开发 ，另有异构传感器网络多模态监测对象的 随机状态检测机制在研。</p>
+                        </div> 
+                    </div>
+                    <div class="advisor">
+                        <div class="pic">
+                            <img src="img/ZhengZhonglong.png">
+                        </div>
+                        <div class="txt">
+                            <h2>郑忠龙</h2>
+                            <p>主要研究方向为模式识别、机器学习，浙江省高校计算机研究会副理事长，国家自然科学基金通信评委专家，著有《等同邻域投影》等多篇论文。</p>
+                        </div>                    
+                    </div>
+                    <div class="advisor">
+                        <div class="pic">
+                            <img src="img/KouJianlong.png">
+                        </div> 
+                        <div class="txt">
+                            <h2>寇建龙</h2>
+                            <p>主要研究方向为微观渗流，统计物理，于2008-2011年在香港理工大学科研研究，获教育部高校科研成果奖一项，曾主持国家自然科学基金两项，省级项目两项。</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="solidBlue2">
+        <div class="container"></div>
+    </div> -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/aboutUs.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* 样式初始化 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* 对所有的div及container进行初始化 */
+#nav,#solidBlue,#solidBlue2,#main{
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid #000000; */
+}
+.container{
+    width: 1400px;
+    /* border: 1px solid #f00000; */
+    margin: 0px auto;
+}
+div img{  
+    cursor: pointer;  
+    transition: all 0.2s;  
+}  
+div img:hover{  
+    transform: scale(1.4);  
+}  
+
+/* 设置导航栏的样式 */
+#nav{
+    float: left;/*设置浮动为向左浮动*/
+    height: 80px;/*设置导航栏的高度为80个像素*/
+}
+#nav .logo img{
+    width: 70px;/*设置logo的宽为70个像素*/
+    height: 70px;/*设置logo的高为70个像素*/
+    padding-top: 5px;/*与顶端的间距为5个像素*/
+}
+#nav ul li{
+    float: left;/*设置li向左浮动*/
+    line-height:80px;/*行高设置为80个像素*/
+}
+#nav li a{
+    color: #8ab2c7;/*设置各链接的文字颜色*/
+    font-size: 20px;/*设置各链接的文字大小*/
+    border-right: 1.5px solid #8ab2c7;/*在每两个中间加上竖线*/
+    padding: 0px 15px;/*设置边距*/
+
+}
+#nav li a:hover{
+    color: black;/*设置鼠标滑动至链接上时文字颜色变为黑色*/
+    text-decoration: none;/*文字修饰无*/
+}
+#nav .register a{
+    border: none;/*去除注册右边的边框*/
+}
+/* 设置小蓝条的样式 */
+#solidBlue{
+    height: 20px;/*设置小蓝条的高为20个像素*/
+    float: left;/*设置为向左浮动*/
+    background-color: #8ab2c7;/*背景颜色为天蓝*/
+}
+
+/* 设置主界面的样式 */
+
+#main{
+    height: 800px;/*设置主界面的高度为800像素*/
+    float: left;
+}
+.main-left {
+    float: left;
+    margin-top: 50px;/*与顶端间距50像素*/
+}
+/* 设置左边导航栏的标题 */
+.main-left .navTitle{
+    width: 100%;
+    background-color: #8ab2c7;/*背景色天蓝*/
+    color: #fff;/*字体颜色白色*/
+    line-height: 80px;/*行高80像素*/
+    height: 80px;/*高度80像素*/
+    font-size: 25px;/*字体大小25像素*/
+    text-align: center;/*文字居中*/
+    padding-left: 80px;/*距左端80像素*/
+    padding-right: 80px;/*距右端80像素*/
+}
+/* 设置左边导航栏的子栏目 */
+.main-left ul{
+    display: block;/*设置块级元素*/
+    font-size: 20px;/*字体大小20像素*/
+    padding-left: 30px;/*距左端30像素*/
+    background-color: gainsboro;/*背景色*/
+    color: #000;/*字体颜色*/
+    font-family: "微软雅黑";
+}
+
+.main-left ul li{
+    width: 200px;
+    display: list-item;
+    text-align: left;/*居中*/
+    padding: 20px;
+    border-bottom: 1px solid gray;/*为每个li加上边框*/
+    text-align: center;
+}
+.main-left ul #last{
+    border: none;/*最后一个li去掉边框*/
+}
+/* 设置右边显示栏的样式 */
+#main-right {
+    float: left;
+    margin-top: 50px;/*距顶端50像素*/
+    margin-left: 20px;/*距左端20像素*/
+    width: 860px;/*宽度为860像素*/
+}
+
+.title{
+    background-color: #8ab2c7;/*设置标题栏背景色天蓝*/
+    width: 860px;
+    background-color: #8ab2c7;
+    color: #fff;/*字体颜色白色*/
+    line-height: 40px;/*行高40像素*/
+    height: 40px;/*高度40像素*/
+    font-size: 20px;/*字体大小20像素*/
+    font-weight: bold;/*字体加粗*/
+    padding-left: 20px;/*内边距左20像素*/
+    border: 1px solid #8ab2c7;/*加上一像素的实线边框*/
+    border-bottom: none;
+}
+.text{
+    width: 860px;
+    line-height: 28px;/*行高28像素*/
+    padding: 20px 5%;/*与上下边距20像素，左右5%的边距*/
+    border: 1px solid #cccccc;
+    border-top: none;
+}
+.text .advisor p{
+    font-family: 宋体;/*文字设置为宋体*/
+    font-size: 16px;/*字体大小为16像素*/
+    margin-bottom: 8px;
+    border-top: 2px solid rgb(130, 130, 130);/**/
+}
+.text .advisor{
+    height:250px;/*对于每个专家高度为250像素*/
+    margin-top: 20px;/*间隔20像素*/
+}
+.text .advisor .pic{
+    width: 165px;/*图片宽度设置为165像素*/
+    float: left;
+    padding-left: 20px;/*左间距20像素*/
+}
+.text .advisor .txt{
+    float: left;
+    width: 450px;/*文本宽度450像素*/
+    margin-left: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid rgb(153,186,203);/*加上一像素的天蓝色边框*/
+    background-color: rgb(229, 238, 243);
+    border-radius: 10px;/*边框圆角*/
+}
+.text .advisor .txt h2{
+    font-family: Microsoft JhengHei;
+    font-weight: bold;/*字体加粗*/
+    font-size: 20pt;/*字体大小设置为20pt*/
+    color: rgb(135,173,193);
+}
+.text .advisor .pic img{
+    width: 165px;
+    height: 200px;
+}
+
+
+/* 设置小蓝条的样式 */
+#solidBlue2{
+    height: 40px;
+    float: left;
+    background-color: #8ab2c7;
+}

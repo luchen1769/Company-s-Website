@@ -1,0 +1,48 @@
+/* 样式初始化 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+.title{
+    background-color: #8ab2c7;/*设置标题栏背景色天蓝*/
+    width: 860px;
+    background-color: #8ab2c7;
+    color: #fff;/*字体颜色白色*/
+    line-height: 40px;/*行高40像素*/
+    height: 40px;/*高度40像素*/
+    font-size: 20px;/*字体大小20像素*/
+    font-weight: bold;/*字体加粗*/
+    padding-left: 20px;/*内边距左20像素*/
+    border: 1px solid #8ab2c7;/*加上一像素的实线边框*/
+    border-bottom: none;
+}
+
+.text{
+    width: 860px;
+    line-height: 28px;/*行高28像素*/
+    padding: 20px 5%;/*与上下边距20像素，左右5%的边距*/
+    border: 1px solid #cccccc;
+    border-top: none;
+}
+.text h2{
+    font-family: 微软雅黑;
+    font-size: 25px;
+    color: #8ab2c7;
+}
+.text p{
+    font-family: 宋体;
+    font-size: 17px;
+}

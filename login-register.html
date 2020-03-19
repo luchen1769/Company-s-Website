@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>科技物联，让特殊人群回归社会</title>
+    <link rel="stylesheet" href="css/login-register.css">
+</head>
+<body>
+    <!-- 页面的导航栏  -->
+    <div id="nav">
+        <div class="container">
+            <div class="logo left">
+                <!-- 导航栏左部的公司logo -->
+                <img src="img/logo.png">
+            </div>
+            <ul class="right">
+                <!-- 链接到各个子界面的超链接 -->
+                <!-- 点击网站首页链接至index.html -->
+                <li><a href="index.html">网站首页</a></li>
+                <!-- 点击关于我们链接至aboutUs.html -->
+                <li><a href="aboutUs.html">关于我们</a></li>
+                <!-- 点击业务介绍链接至businessIntroduction.html -->
+                <li><a href="businessIntroduction.html">业务介绍</a></li>
+                <!-- 点击下载APP链接至download.html -->
+                <li><a href="download.html">下载APP</a></li>
+                <!-- 点击登录/注册链接至login-register.html -->
+                <li><a href="login-register.html">登录</a></li>
+                <li class="register"><a href="login-register.html">注册</a></li>
+            </ul>
+            <div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <div class="kit-login-box">
+                    </div>
+                </div>
+            </div>
+            <script src="./plugins/layui/layui.js"></script>
+            <script src="./plugins/sideshow/js/TweenLite.min.js"></script>
+            <script src="./plugins/sideshow/js/EasePack.min.js"></script>
+            <script src="./plugins/sideshow/js/rAF.js"></script>
+            <script src="./plugins/sideshow/js/demo-1.js"></script>
+        </div>
+    </div>
+    <!-- 页面的蓝条 -->
+    <div id="solidBlue">
+        <div class="container"></div>
+    </div>
+    <!-- 页面的主界面 -->
+    <div id="main">
+        <div class="container">
+            <div class="panel">
+                <div class="content login">
+                    <div class="switch">
+                        <!-- 默认选中登录功能 -->
+                        <span id="login" class="active">登录</span>
+                        <span>/</span>
+                        <span id="signup">注册</span>
+                    </div>
+                    <!-- 四个输入框，登录功能显示两个，注册显示四个 -->
+                    <form action="">
+                        <div id="email" class="input" placeholder="电子邮箱"><input type="text"></div>
+                        <div class="input" placeholder="用户名"><input type="text"></div>
+                        <div class="input" placeholder="密码"><input type="password"></div>
+                        <div id="repeat" class="input" placeholder="确认密码"><input type="password"></div>
+                        <a href="#">忘记密码?</a>
+                        <button>登录</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="solidBlue2">
+        <div class="container"></div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/login-register.js"></script>
+</html>

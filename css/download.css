@@ -1,0 +1,204 @@
+/* 样式初始化 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* 对所有的div及container进行初始化 */
+#nav,#maindownload,#introduct,#solidBlue{
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid #000000; */
+}
+div img{  
+    cursor: pointer;  
+    transition: all 0.2s;  
+}  
+div img:hover{  
+    transform: scale(1.4);  
+}  
+.container{
+    width: 1400px;
+    /* border: 1px solid #f00000; */
+    margin: 0px auto;
+}
+
+/* 返回顶部按钮样式设置 */
+p#back-to-top {
+    position: fixed;/*将位置设置成相对屏幕*/
+    bottom: 50px;/*距浏览器底端50个像素*/
+    right: 50px;/*距浏览器右端50个像素*/
+}
+p#back-to-top a {
+    text-align: center;/*居中*/
+    text-decoration: none;/*文字修饰设置为无*/
+    color: #d1d1d1;
+    display: block;
+    width: 50px;
+    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+    transition: color 1s;
+}
+p#back-to-top a:hover {
+    color: #979797;/*对鼠标滑过设置效果*/
+}
+p#back-to-top a span {
+     /* 设置返回顶部按钮的图片 */
+     background: #d1d1d1 url(../img/back-to-top.png) no-repeat center center;
+     border-radius: 6px;/*将整个按钮设置为圆角*/
+     display: block;
+     height: 50px;/*设置按钮的高为50个像素*/
+     width: 50px;/*设置按钮的宽为50个像素*/
+     margin-bottom: 5px;/*底端间隔5个像素*/
+       /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+     transition: background 1s;
+}
+#back-to-top a:hover span {
+    background: #979797 url(../img/back-to-top.png) no-repeat center center;
+}
+
+/* 设置导航栏的样式 */
+#nav{
+    float: left;/*设置浮动为向左浮动*/
+    height: 80px;/*设置导航栏的高度为80个像素*/
+    /* position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100; */
+}
+/* 设置导航栏的logo的样式 */
+#nav .logo img{
+    width: 70px;/*设置logo的宽为70个像素*/
+    height: 70px;/*设置logo的高为70个像素*/
+    padding-top: 5px;/*与顶端的间距为5个像素*/
+}
+/* 设置导航栏各链接的样式 */
+#nav ul li{
+    float: left;/*设置li向左浮动*/
+    line-height:80px;/*行高设置为80个像素*/
+}
+#nav li a{
+    color: #8ab2c7;/*设置各链接的文字颜色*/
+    font-size: 20px;/*设置各链接的文字大小*/
+    border-right: 1.5px solid #8ab2c7;/*在每两个中间加上竖线*/
+    padding: 0px 15px;/*设置边距*/
+
+}
+#nav li a:hover{
+    color: black;/*设置鼠标滑动至链接上时文字颜色变为黑色*/
+    text-decoration: none;/*文字修饰无*/
+}
+#nav .register a{
+    border: none;/*去除注册右边的边框*/
+}
+/* 设置主下载界面的样式 */
+#maindownload{
+    background-color: #8ab2c7;
+    float: left;
+    height: 200px;
+}
+/*设置APP logo的图片样式*/
+#maindownload .img{
+    background-color: white;
+    width: 130px;/*设置图片盒子宽130像素*/
+    height: 130px;/*设置图片盒子高130像素*/
+    margin-top: 35px;
+    border-radius: 10px;
+    border: white 1px solid;
+    float: left;
+}
+.img img{
+    width: 110px;/*设置图片宽110像素*/
+    height: 110px;/*设置图片高110像素*/
+    padding-left: 15px;
+    padding-top: 15px;
+}
+#maindownload .text{
+    float: left;
+    margin-top: 30px;/*距顶端30像素*/
+    margin-left: 15px;/*距左端15像素*/
+}
+#maindownload .text h1{
+    font-family: "微软雅黑";
+    font-size: 40px;/*设置h1标签的字体大小为40像素*/
+    font-weight: 500;/*字体粗细为500*/
+}
+#maindownload .text p{
+    font-size: 14px;/*设置p标签的字体大小为14像素*/
+    padding-top: 10px;
+}
+#maindownload .qrcode{
+    float: right;/*设置二维码图片向右浮动*/
+}
+#maindownload .qrcode img{
+    width: 120px;/*设置二维码宽120像素*/
+    height: 120px;/*设置二维码高120像素*/
+    margin-top: 30px;
+    margin-right: 80px;
+}
+#maindownload .qrcode p{
+    font-size: 17px;
+    padding-top: 5px;
+}
+
+/* 设置APP介绍的样式 */
+#introduct{
+    float: left;
+    margin-top: 25px;
+    height: 1500px;
+
+}
+#introduct .title{
+    border-left: #8ab2c7 10px solid;/*给APP介绍标题加上左边框*/
+}
+
+#introduct .title p{
+    font-family: "微软雅黑";
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+/* 设置APP功能模拟图的样式 */
+#introduct img{
+    height:640px;
+    width: 360px;
+    float: left;
+    border: #8ab2c7 1px solid;
+}
+#introduct .introductText{
+    width: 360px;
+    float: left;
+}
+/* 设置APP功能介绍的字体样式 */
+#introduct .introductText h3{
+    font-family: "微软雅黑";
+    font-weight: bold;
+    text-align: center;
+}
+#introduct .introductText p{
+    font-size: 17px;
+    line-height: 30px;
+}
+#introduct .function{
+    padding-top: 20px;
+    float: left;
+    width: 400px;
+    margin-left: 50px;
+}
+
+/* 设置小蓝条的样式 */
+#solidBlue{
+    height: 150px;
+    float: left;
+    background-color: #8ab2c7;
+}

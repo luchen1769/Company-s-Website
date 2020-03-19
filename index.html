@@ -3,51 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 网页的标题 -->
     <title>科技物联，让特殊人群回归社会</title>
-    <link rel="stylesheet" href="index.css" type="text/css">
-    <link rel="stylesheet" href="index.js" type="text/javascript">
+    <!-- 对应的css文件 -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
 </head>
-<body>
+<body id="top">
+    <!-- 返回顶部按钮 -->
+    <p id="back-to-top"><a href="#top"><span></span></a></p>
     <!-- 页面的导航栏  -->
     <div id="nav">
         <div class="container">
             <div class="logo left">
+                <!-- 导航栏左部的公司logo -->
                 <img src="img/logo.png">
             </div>
             <ul class="right">
-                <li><a href="#">网站首页</a></li>
-                <li><a href="#">关于我们</a></li>
-                <li><a href="#">产品介绍</a></li>
-                <li><a href="#">用户服务</a></li>
-                <li><a href="#">联系我们</a></li>
-                <li><a href="#">下载APP</a></li>
-                <li><a href="#">登录</a></li>
-                <li class="register"><a href="#">注册</a></li>
+                <!-- 链接到各个子界面的超链接 -->
+                <!-- 点击网站首页链接至index.html -->
+                <li><a href="index.html">网站首页</a></li>
+                <!-- 点击关于我们链接至aboutUs.html -->
+                <li><a href="aboutUs.html">关于我们</a></li>
+                <!-- 点击业务介绍链接至businessIntroduction.html -->
+                <li><a href="businessIntroduction.html">业务介绍</a></li>
+                <!-- 点击下载APP链接至download.html -->
+                <li><a href="download.html">下载APP</a></li>
+                <!-- 点击登录/注册链接至login-register.html -->
+                <li><a href="login-register.html">登录</a></li>
+                <li class="register"><a href="login-register.html">注册</a></li>
             </ul>
+            <div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <div class="kit-login-box">
+                    </div>
+                </div>
+            </div>
+            <script src="./plugins/layui/layui.js"></script>
+            <script src="./plugins/sideshow/js/TweenLite.min.js"></script>
+            <script src="./plugins/sideshow/js/EasePack.min.js"></script>
+            <script src="./plugins/sideshow/js/rAF.js"></script>
+            <script src="./plugins/sideshow/js/demo-1.js"></script>
         </div>
     </div>
+    <script src="./plugins/sideshow/js/demo-1.js"></script>
     <!-- 页面的蓝条 -->
     <div id="solidBlue">
         <div class="container"></div>
     </div>
     <!-- 页面的banner图 -->
     <div id="banner">
-        <div class="container"></div>
+        <div class="container">
+            <div id="bannerPicture">
+                <!-- 在首页图片中插入的文字 -->
+                <h1>SWOCH</h1>
+            </div>
+        </div>
     </div>
+    
     <!-- 页面的产品介绍 -->
     <div id="productIntroduction">
         <div class="container">
             <div class="product-top">
                 <h2>/产品介绍/</h2>
+                <!-- 对于整个产品的总体介绍 -->
                 <h3>PRODUCT PRESENTATION</h3>
                 <p>致力于改善依赖轮椅的老年人和残疾人的出行体验，采用软硬件结合的方式，拥有七大功能：弯曲度控制、自动推</p>
                 <p>行、自动避障、心率监测以及健康状况分析、紧急报警以及呼救、路径规划以及语音导航、实时位置追踪</p>
             </div>
             <div class="product-footer">
+            
                 <div class="oldpeople left">
+                    <!-- 产品介绍的模拟图片 -->
                     <img src="img/老人轮椅.png">
                 </div>
+                <!-- 产品的七大功能 -->
                 <ul> 
                     <li>
                         <div>
@@ -106,6 +139,7 @@
     <!-- 页面的团队理念 -->
     <div id="teamConcept">
         <div class="container">
+            
             <div id="concept">
                 <h1>科技物联，让特殊人群“回归”社会</h1>
                 <h3>Science and Technology</h3>
@@ -136,15 +170,20 @@
             </div>
         </div>
     </div>
+    <!-- 页面小蓝条2 -->
+    <div id="solidBlue2">
+        <div id="container"></div>
+    </div>
     <!-- 页面的联系我们部分 -->
     <div id="contact">
         <div class="container">
             <div class="contact-top">
-                <h2>/联系我们/</h2>
-                <h3>CONTACT US</h3>
+                <h2>/&nbsp;SWOCH&nbsp;&nbsp;智能轮椅&nbsp;/</h2>
+                <h3>SWOCH WheelChair</h3>
             </div>
             <ul>
                 <li>
+                    <h3>联系我们</h3>
                     <p>电话：17867962653</p>
                     <p>QQ：1601330019</p>
                     <p>邮箱：luchen1769@163.com</p>
@@ -152,7 +191,7 @@
                     <p>地址：浙江省金华市浙江师范大学</p>
                 </li>
                 <li>
-                    <h3>产品</h3>
+                    <h3>产品介绍</h3>
                     <p>知识产权</p>
                     <p>工商服务</p>
                     <p>行政审批</p>
@@ -161,7 +200,7 @@
                     <p>商账管理</p>
                 </li>
                 <li>
-                    <h3>客户服务</h3>
+                    <h3>用户服务</h3>
                     <p>客服答疑</p>
                     <p>支付方式</p>
                     <p>帮助中心</p>
@@ -179,5 +218,11 @@
             </ul>
         </div>
     </div>
+    <!-- 页面小蓝条3 -->
+    <div id="solidBlue3">
+        <div id="container"></div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
